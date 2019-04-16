@@ -17,7 +17,7 @@ handleClick(buttonText) {
                 </section>
                 <section className="buttons">
                     <ul>
-                        {this.props.quiz_question.answer_options.map((answer_option, index) => {
+                        {this.props.quiz_questions.answer_options.map((answer_option, index) => {
                             return <QuizQuestionButton key={index} button_text={answer} clickHandler={this.handleClick.bind(this)}/>
                         })}
                     </ul>
